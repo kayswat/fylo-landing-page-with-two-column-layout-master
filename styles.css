@@ -1,0 +1,356 @@
+:root{
+    --right-Blue: hsl(224, 93%, 58%);
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   width: 100%;
+   font-family:'Open Sans', sans-serif;
+   overflow-x: hidden;
+}
+
+h3, header{
+    font-family: 'Raleway', sans-serif;
+
+}
+p{
+    font-size: 16px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+   overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding: 20px;
+    width:100px;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li{
+    padding: 30px;
+}
+
+header nav ul li:hover{
+   border-bottom: 2px solid var(--Moderate-Cyan);
+   color:white;
+}
+
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.section1{
+display: flex;
+width: 100%;
+padding: 30px;
+}
+
+.section-image{
+    width: 50%;
+    margin-top: 50px;
+}
+
+.content form{
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+}
+.emailinput{
+    width: 60%;
+    padding: 10px;
+}
+
+.formbtn{
+    margin-left: 5px;
+    width: 40%;
+    padding: 10px;
+    color: white;
+    background-color: var(--right-Blue);
+    border: none;
+}
+
+.formbtn:hover{
+    opacity: 0.5;
+}
+
+.section2{
+    display: flex;
+    height: 100%;
+    background-image: url(./Images/bg-curve-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    padding-left: 30px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    width: 50%;
+    padding: 0.8rem;
+}
+.section2 .content a{
+    color: var(--Moderate-Cyan);
+    
+}
+
+.content h3{
+    font-size: 3rem;
+}
+
+.quote{
+    width: 50%;
+    font-size: 0.rem;
+    padding: 20px;
+    box-shadow: 1px 1px 5px gray;
+    margin-top: 20px;
+    background-color: white;
+}
+.profile{
+    display: flex;
+    width: 150px;
+    padding: 5px 0px;
+    align-items: center;
+}
+
+.profile p{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.profile-name{
+    font-size: 0.7rem;
+    font-weight: bolder;
+}
+.profile-name-title{
+    font-size: 0.5rem;
+
+    margin-top: 0;
+}
+
+.profile-content{
+    margin-left: 5px;
+    place-self: center;
+    height: 30px;
+}
+
+.section3{
+    background-color: var(--Desaturated-Blue);
+    display: flex;
+    padding: 20px 0;
+    color: white;
+    padding: 30px;
+}
+
+.section3 h4{
+    font-size: 1.5rem;
+}
+.section3 p{
+    width: 70%;
+}
+
+.section3 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.section3 form input[type="email"]{
+padding: 10px;
+width: 80%;
+}
+
+.section3 form button{
+    padding: 10px;
+    width: 50%;
+    margin-top: 20px;
+    color: white;
+    background-color: var( --right-Blue);
+    border: none;
+}
+
+.section3 form button:hover{
+    opacity: 0.8;
+}
+
+footer{
+    background-color: var(--Very-Dark-Blue);
+    padding: 30px;
+   
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .links{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li{
+    padding: 5px;
+}
+
+footer ul li:hover{
+    border-bottom: 2px solid var(--Moderate-Cyan);
+    cursor: pointer;
+}
+
+.social-handle{
+    display: flex;
+    margin-right: 30px;
+   
+}
+footer .logo{
+    color: white;
+    font-size: 100px;
+}
+
+
+@media screen and (max-width:920px){
+    .section1{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .section2{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+.section2 .quote{
+    margin: 10px auto;
+}
+
+    .section3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .section3 form button{
+        padding: 10px;
+        width: 85%;
+        margin-top: 10px;
+        color: white;
+        background-color: var(--right-Blue);
+        border: none;
+    }
+
+    .section3 form input[type="email"]{
+        padding: 10px;
+        width: 80%;
+        }
+        
+
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        width: 100%;
+    }
+
+    .links nav{
+        margin: 10px;
+       
+    }
+    
+
+    .social-handle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .emailinput{
+        width: 80%;
+        padding: 10px;
+    }
+    
+    .formbtn{
+        width: 80%;
+        padding: 10px;
+        color: white;
+        background-color: var(--right-Blue);
+        border: none;
+        margin-top: 10px;
+    }
+
+}
